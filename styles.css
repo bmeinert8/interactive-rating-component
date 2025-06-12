@@ -1,0 +1,176 @@
+/*************************************/
+/*           CSS VARIABLES           */
+/*************************************/
+
+:root {
+  /* Colors */
+
+  --White: #ffffff;
+  --Black: #000000;
+  --Grey950: #131518;
+  --Grey900: #262e38;
+  --Grey500: #969fad;
+  --Orange500: #fc7614;
+
+  /* Spacing */
+  --Spacing-0px: 0rem;
+  --Spacing-8px: 0.5rem;
+  --Spcing-16px: 1rem;
+  --Spacing-24px: 1.5rem;
+  --Spacing-32px: 2rem;
+  --Spacing-40px: 2.5rem;
+  --Spacing-104px: 6.5rem;
+  --Spacing-136px: 8.5rem;
+}
+
+/*************************************/
+/*             CSS Reset             */
+/*************************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Ensure images are responsive and don't exceed their container */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset buttons to avoid inconsistent styling */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  appearance: none;
+}
+
+/* Ensure form elements don't overflow */
+input,
+textarea {
+  width: 100%;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Set base font and line height */
+html {
+  font-size: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outlines for better accessibility control */
+:focus {
+  outline: none;
+}
+
+/* Ensure body takes up at least full viewport height */
+body {
+  min-height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--Grey950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************************/
+/*             Typography            */
+/*************************************/
+
+.text-preset-1 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 700;
+  line-height: 2.1875rem; /* 35px */
+  letter-spacing: 0rem; /* 0px */
+}
+
+.text-preset-2 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: 0rem; /* 0px */
+}
+
+.text-preset-3 {
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+  line-height: 1.5rem; /* 24px */
+  letter-spacing: 0.0125rem; /* 0.2px */
+}
+
+.text-preset-4-bold {
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 700;
+  line-height: 1.1875rem; /* 19px */
+  letter-spacing: 0.125rem; /* 2px */
+}
+
+.text-preset-4-regular {
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 400;
+  line-height: 1.5rem; /* 24px */
+  letter-spacing: 0rem; /* 0px */
+}
+
+.text-preset-5-bold {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  line-height: 1.125rem; /* 18px */
+  letter-spacing: 0.1169rem; /* 1.87px */
+}
+
+.text-preset-5-SemiBold {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+  line-height: 1.5rem; /* 24px */
+  letter-spacing: 0.0106rem; /* 0.17px */
+}
+
+.text-preset-5-regular {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 1.375rem; /* 22px */
+  letter-spacing: 0rem; /* 0px */
+}
+
+
