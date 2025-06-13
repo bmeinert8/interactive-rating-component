@@ -240,6 +240,7 @@ body {
 
 .submit-button {
   background-color: var(--Orange500);
+  color: var(--Grey950);
   padding: var(--Spacing-16px) var(--Spacing-104px);
   border-radius: 22.5px;
   text-transform: uppercase;
@@ -267,4 +268,26 @@ body {
 
 .thank-you-text-content {
   text-align: center;
+}
+
+/*************************************/
+/*       Active/hover states         */
+/*************************************/
+
+.rating-item:hover {
+  background-color: var(--Orange500);
+  color: var(--Grey950);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rating-item.active {
+  background-color: var(--White);
+  color: var(--Grey950);
+}
+
+.submit-button:hover {
+  background-color: var(--White);
+  cursor: pointer;
 }
