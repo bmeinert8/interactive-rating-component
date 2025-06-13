@@ -182,7 +182,7 @@ body {
   background-image: var(--Gradient-1);
   padding: var(--Spacing-24px);
   border-radius: 15px;
-  max-width: 327px;
+  width: 327px;
 }
 
 .card-content,
@@ -241,8 +241,8 @@ body {
 .submit-button {
   background-color: var(--Orange500);
   color: var(--Grey950);
-  padding: var(--Spacing-16px) var(--Spacing-104px);
-  border-radius: 22.5px;
+  padding: var(--Spacing-8px) var(--Spacing-104px);
+  border-radius: 24px;
   text-transform: uppercase;
 }
 
@@ -290,4 +290,64 @@ body {
 .submit-button:hover {
   background-color: var(--White);
   cursor: pointer;
+}
+
+/*************************************/
+/*           Media Queries           */
+/*************************************/
+
+@media (min-width: 768px) {
+  .main-container {
+    padding: var(--Spacing-32px);
+    width: 412px;
+  }
+
+  .icon-container {
+    height: 48px;
+    width: 48px;
+  }
+
+  .star-icon {
+    width: 16.75px;
+    height: 16px;
+  }
+
+  .card-content,
+  .thank-you-content {
+    gap: var(--Spacing-32px);
+  }
+
+  .text-content,
+  .thank-you-text-content {
+    gap: var(--Spacing-16px);
+  }
+
+  .text-preset-2 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 2.1875rem; /* 35px */
+  }
+
+  .text-preset-5-regular {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.5rem; /* 24px */
+  }
+
+  .rating-list {
+    gap: var(--Spacing-24px);
+  }
+
+  .rating-item {
+    width: 51px;
+    height: 51px;
+  }
+
+  .text-preset-5-bold {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+    letter-spacing: 0.0125rem; /* 0.2px */
+  }
+
+  .submit-button {
+    border-radius: 32px;
+  }
 }
