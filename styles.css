@@ -186,12 +186,15 @@ body {
 }
 
 .card-content,
-.text-content {
+.text-content,
+.thank-you-content,
+.thank-you-text-content {
   display: flex;
   flex-direction: column;
 }
 
-.card-content {
+.card-content,
+.thank-you-content {
   gap: var(--Spacing-24px);
 }
 
@@ -205,7 +208,8 @@ body {
   align-items: center;
 }
 
-.text-content {
+.text-content,
+.thank-you-text-content {
   gap: var(--Spacing-16px);
 }
 
@@ -239,4 +243,28 @@ body {
   padding: var(--Spacing-16px) var(--Spacing-104px);
   border-radius: 22.5px;
   text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.thank-you-image-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-selection {
+  align-self: center;
+  height: 32px;
+  background-color: var(--Grey900);
+  border-radius: 16px;
+  color: var(--Orange500);
+  padding: var(--Spacing-8px) var(--Spacing-16px);
+}
+
+.thank-you-text-content {
+  text-align: center;
 }
