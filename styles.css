@@ -11,11 +11,12 @@
   --Grey900: #262e38;
   --Grey500: #969fad;
   --Orange500: #fc7614;
+  --Gradient-1: linear-gradient(180deg, #232a34 0%, #181e27 100%);
 
   /* Spacing */
   --Spacing-0px: 0rem;
   --Spacing-8px: 0.5rem;
-  --Spcing-16px: 1rem;
+  --Spacing-16px: 1rem;
   --Spacing-24px: 1.5rem;
   --Spacing-32px: 2rem;
   --Spacing-40px: 2.5rem;
@@ -173,4 +174,69 @@ body {
   letter-spacing: 0rem; /* 0px */
 }
 
+/*************************************/
+/*         General styling           */
+/*************************************/
 
+.main-container {
+  background-image: var(--Gradient-1);
+  padding: var(--Spacing-24px);
+  border-radius: 15px;
+  max-width: 327px;
+}
+
+.card-content,
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  gap: var(--Spacing-24px);
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  background-color: var(--Grey900);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  gap: var(--Spacing-16px);
+}
+
+.card-title {
+  color: var(--White);
+}
+
+.card-text {
+  color: var(--Grey500);
+}
+
+.rating-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--Spacing-16px);
+}
+
+.rating-item {
+  width: 42px;
+  height: 42px;
+  background-color: var(--Grey900);
+  color: var(--Grey500);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: var(--Orange500);
+  padding: var(--Spacing-16px) var(--Spacing-104px);
+  border-radius: 22.5px;
+  text-transform: uppercase;
+}
