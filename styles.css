@@ -282,7 +282,7 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.rating-item.active {
+.active {
   background-color: var(--White);
   color: var(--Grey950);
 }
@@ -290,6 +290,7 @@ body {
 .submit-button:hover {
   background-color: var(--White);
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /*************************************/
