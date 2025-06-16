@@ -1,6 +1,6 @@
 const submitButton = document.querySelector('.js-submit-btn');
-const thankYouElement = document.querySelector('.js-thank-you-content');
-const cardElement = document.querySelector('.js-card-content');
+const thankYouSection = document.querySelector('.js-thank-you-content');
+const cardSection = document.querySelector('.js-card-content');
 const ratingElements = document.querySelectorAll('.js-rating-button');
 const ratingValue = document.querySelector('.review-value');
 
@@ -9,7 +9,6 @@ ratingElements.forEach((button) => {
   button.addEventListener('click', (event) => {
     ratingElements.forEach((btn) => btn.classList.remove('active'));
     event.target.classList.add('active');
-    return;
   });
 });
 
@@ -18,10 +17,11 @@ submitButton.addEventListener('click', () => {
   // Check if a rating is selected to proceed to thank you page
   const selectedRating = document.querySelector('.js-rating-button.active');
   if (!selectedRating) {
+    alert('Please select a rating before submitting.');
     return;
   } else {
-    cardElement.classList.add('hidden');
-    thankYouElement.classList.remove('hidden');
+    cardSection.classList.add('hidden');
+    thankYouSection.classList.remove('hidden');
     ratingValue.textContent = selectedRating.getAttribute('value');
   }
 });

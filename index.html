@@ -20,69 +20,75 @@
   <body>
     <main class="main-container">
       <section class="card-content js-card-content">
-        <div class="icon-container">
+        <span class="icon-container">
           <img
             src="./images/icon-star.svg"
             alt="image of a star"
             class="star-icon"
           />
-        </div>
+        </span>
         <article class="text-content">
           <h1 class="text-preset-2 card-title">How did we do?</h1>
           <p class="text-preset-5-regular card-text">
             Please let us know how we did with your support request. All
             feedback is apperciated to help us improve our offering!
           </p>
-          <ul class="rating-list">
-            <li
-              class="rating-item text-preset-5-bold js-rating-button"
-              value="1"
-            >
-              1
-            </li>
-            <li
-              class="rating-item text-preset-5-bold js-rating-button"
-              value="2"
-            >
-              2
-            </li>
-            <li
-              class="rating-item text-preset-5-bold js-rating-button"
-              value="3"
-            >
-              3
-            </li>
-            <li
-              class="rating-item text-preset-5-bold js-rating-button"
-              value="4"
-            >
-              4
-            </li>
-            <li
-              class="rating-item text-preset-5-bold js-rating-button"
-              value="5"
-            >
-              5
-            </li>
-          </ul>
+          <fieldset class="rating-fieldset">
+            <legend class="visually-hidden">Rate our support</legend>
+            <ul class="rating-list">
+              <li
+                class="rating-item text-preset-5-bold js-rating-button"
+                value="1"
+              >
+                1
+              </li>
+              <li
+                class="rating-item text-preset-5-bold js-rating-button"
+                value="2"
+              >
+                2
+              </li>
+              <li
+                class="rating-item text-preset-5-bold js-rating-button"
+                value="3"
+              >
+                3
+              </li>
+              <li
+                class="rating-item text-preset-5-bold js-rating-button"
+                value="4"
+              >
+                4
+              </li>
+              <li
+                class="rating-item text-preset-5-bold js-rating-button"
+                value="5"
+              >
+                5
+              </li>
+            </ul>
+          </fieldset>
         </article>
-        <button class="submit-button text-preset-5-SemiBold js-submit-btn">
+        <button
+          class="submit-button text-preset-5-SemiBold js-submit-btn"
+          type="submit"
+        >
           Submit
         </button>
       </section>
 
       <!-- Thank You Section -->
       <section class="thank-you-content hidden js-thank-you-content">
-        <div class="thank-you-image-container">
+        <span class="thank-you-image-container">
           <img
             src="./images/illustration-thank-you.svg"
-            alt="image of an online payment"
+            alt="thank you image"
           />
-        </div>
+        </span>
         <div class="rating-selection">
-          <p class="text-preset-5-regular">
-            You selected <span class="review-value">4</span> out of 5
-          </p>
+          <output class="text-preset-5-regular">
+            You selected <span class="review-value"></span> out of 5
+          </output>
         </div>
         <article class="thank-you-text-content">
           <h2 class="text-preset-2 card-title">Thank you!</h2>
