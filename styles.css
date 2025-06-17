@@ -86,8 +86,8 @@ table {
   *,
   *::before,
   *::after {
-    animation: none !important;
-    transition: none !important;
+    animation: none;
+    transition: none;
   }
 }
 
@@ -311,7 +311,8 @@ body {
 /*           Media Queries           */
 /*************************************/
 
-@media (min-width: 48rem) { /* 768px */
+@media (min-width: 48rem) {
+  /* 768px */
   .main-container {
     padding: var(--Spacing-32px);
     width: 25.75rem; /* 412px */
