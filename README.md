@@ -29,16 +29,17 @@ Users should be able to:
 
 #### Mobile (375px)
 
-![Mobile Screenshot](#)
+![Mobile Screenshot](./images/mobile-screenshot.png)
 
 #### Tablet/Desktop (768px)
 
-![Tablet/Desktop Screenshot](#)
+![Tablet/Desktop Screenshot](./images/desktop-screenshot.png)
+![Tablet/Desktop Thank you](./images/desktop-thank-you.png)
 
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/bmeinert8/interactive-rating-component/)
-- Live Site URL: [Live Demo](#)
+- Live Site URL: [Live Demo](https://bmeinert8.github.io/interactive-rating-component/)
 
 ## My Process
 
@@ -63,7 +64,7 @@ I plan to enhance this project with additional features, including:
 
 - Replace alert message with custom modal popup.
 - Recreate the rating section as a form using radio buttons and custom styling.
-- Implement a temporary cloud database through azure to create a backend for rating storage upon submited rating. 
+- Implement a temporary cloud database through azure to create a backend for rating storage upon submited rating.
 
 ## Setup
 
