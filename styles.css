@@ -180,10 +180,10 @@ body {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem; /* 1px */
+  height: 0.0625rem; /* 1px */
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem; /* -1px */
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -192,8 +192,8 @@ body {
 .main-container {
   background-image: var(--Gradient-1);
   padding: var(--Spacing-24px);
-  border-radius: 15px;
-  width: 327px;
+  border-radius: 0.9375rem; /* 15px */
+  width: 20.4375rem; /* 327px */
 }
 
 .card-content,
@@ -210,8 +210,8 @@ body {
 }
 
 .icon-container {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
   background-color: var(--Grey900);
   border-radius: 50%;
   display: flex;
@@ -242,8 +242,8 @@ body {
 }
 
 .rating-item {
-  width: 42px;
-  height: 42px;
+  width: 2.625rem; /* 42px */
+  height: 2.625rem; /* 42px */
   background-color: var(--Grey900);
   color: var(--Grey500);
   border-radius: 50%;
@@ -256,7 +256,7 @@ body {
   background-color: var(--Orange500);
   color: var(--Grey950);
   padding: var(--Spacing-8px) var(--Spacing-104px);
-  border-radius: 24px;
+  border-radius: 1.5rem; /* 24px */
   text-transform: uppercase;
 }
 
@@ -273,9 +273,9 @@ body {
 
 .rating-selection {
   align-self: center;
-  height: 32px;
+  height: 2rem; /* 32px */
   background-color: var(--Grey900);
-  border-radius: 16px;
+  border-radius: 1rem; /* 16px */
   color: var(--Orange500);
   padding: var(--Spacing-8px) var(--Spacing-16px);
 }
@@ -311,20 +311,20 @@ body {
 /*           Media Queries           */
 /*************************************/
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) { /* 768px */
   .main-container {
     padding: var(--Spacing-32px);
-    width: 412px;
+    width: 25.75rem; /* 412px */
   }
 
   .icon-container {
-    height: 48px;
-    width: 48px;
+    height: 3rem; /* 48px */
+    width: 3rem; /* 48px */
   }
 
   .star-icon {
-    width: 16.75px;
-    height: 16px;
+    width: 1.046875rem; /* 16.75px */
+    height: 1rem; /* 16px */
   }
 
   .card-content,
@@ -352,8 +352,8 @@ body {
   }
 
   .rating-item {
-    width: 51px;
-    height: 51px;
+    width: 3.1875rem; /* 51px */
+    height: 3.1875rem; /* 51px */
   }
 
   .text-preset-5-bold {
@@ -363,6 +363,6 @@ body {
   }
 
   .submit-button {
-    border-radius: 32px;
+    border-radius: 2rem; /* 32px */
   }
 }
